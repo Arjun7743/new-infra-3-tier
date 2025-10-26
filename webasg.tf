@@ -16,7 +16,7 @@ resource "aws_launch_template" "swiggy-web-template" {
   name_prefix   = "swiggy-web-template"
   image_id      = "ami-07382eaff1a1e39da"
   instance_type = "t2.micro"
-  key_name      = "devopsbyraham"
+  key_name      = "Teraform"
   network_interfaces {
     associate_public_ip_address = true
     security_groups             = [aws_security_group.swiggy-ec2-asg-sg.id]
