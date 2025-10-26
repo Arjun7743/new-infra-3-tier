@@ -22,7 +22,7 @@ resource "aws_launch_template" "swiggy-app-template" {
   name_prefix   = "swiggy-app-template"
   image_id      = "ami-07382eaff1a1e39da"
   instance_type = "t2.micro"
-  key_name      = "devopsbyraham"
+  key_name      = "Teraform"
 
   network_interfaces {
     security_groups             = [aws_security_group.swiggy-ec2-asg-sg-app.id]
